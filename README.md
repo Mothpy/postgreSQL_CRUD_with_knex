@@ -8,15 +8,15 @@ If needed, change the version to v18: `nvm use v18`
 For additional help, review the "Learn your tools: Visual Studio Code" lesson in the "Welcome" module.
 
 ## Instructions
-You are a backend developer for a restaurant-finder application called Thinkful Eats, and you've been tasked to query some data about various restaurants in the database. Their backend technology stack is currently in Node.js/Express, PostgreSQL, and Knex. There is currently only one table, restaurants, in the database. It has the following columns:
+You are a backend developer for a restaurant-finder application called Thinkful Eats, and you've been tasked to query some data about various restaurants in the database. Their backend technology stack is currently in `Node.js/Express, PostgreSQL, and Knex`. There is currently only one table, restaurants, in the database. It has the following columns:
 
-restaurant_id (primary key)
+`restaurant_id (primary key)`
 
-restaurant_name (required string)
+`restaurant_name (required string)`
 
-cuisine (required string)
+`cuisine (required string)`
 
-address (required string)
+`address (required string)`
 
 To complete this assessment, you will need to complete the tasks described below to get the tests to pass.
 
