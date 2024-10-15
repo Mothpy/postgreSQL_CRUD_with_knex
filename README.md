@@ -1,9 +1,9 @@
 # Node, Express, and PostgreSQL: CRUD with Knex
-Note: If downloading the assessment files to your local machine, make sure you're running Node v18 before you run npm install.
+Note: If downloading the assessment files to your local machine, make sure you're running Node v18 before you run `npm install`.
 
-Check which version you are running: node -v
+Check which version you are running: `node -v`
 
-If needed, change the version to v18: nvm use v18
+If needed, change the version to v18: `nvm use v18`
 
 For additional help, review the "Learn your tools: Visual Studio Code" lesson in the "Welcome" module.
 
@@ -21,22 +21,22 @@ address (required string)
 To complete this assessment, you will need to complete the tasks described below to get the tests to pass.
 
 ## Existing files
-In this lesson, all the required server routes have already set up for you, so you won't have to edit the src/restaurants/restaurants.router.js file. The test suite will automatically set up a test 
+In this lesson, all the required server routes have already set up for you, so you won't have to edit the `src/restaurants/restaurants.router.js` file. The test suite will automatically set up a test 
 database, then migrate and seed the database with some test data as well. Take some time to understand the content of the existing files.
 
-You will then have to write Knex queries to complete the functions defined inside the src/restaurants/restaurants.service.js and src/restaurants/restaurants.controller.js files.
+You will then have to write Knex queries to complete the functions defined inside the `src/restaurants/restaurants.service.js` and `src/restaurants/restaurants.controller.js` files.
 
 ## Tasks
 In src/restaurants/restaurants.service.js:
 
-Complete the create() function to create a new restaurant in the restaurants table, returning all columns of the newly created restaurant in the result.
+Complete the `create()` function to create a new restaurant in the restaurants table, returning all columns of the newly created restaurant in the result.
 
-Complete the destroy() function to delete a restaurant given the restaurant ID.
+Complete the `destroy()` function to delete a restaurant given the restaurant ID.
 
 In src/restaurants/restaurants.controller.js:
 
-Update the create() route handler to call the create() method of the service and return a 201 status code along with the newly created restaurant.
+Update the `create()` route handler to call the create() method of the service and return a `201 status code` along with the newly created restaurant.
 
-Validate that the request body only contains the properties restaurant_name, cuisine, and address, and validate that each property has a value. Return a 400 status code if the validation fails.
+Validate that the request body only contains the properties `restaurant_name`, `cuisine`, and `address`, and validate that each property has a value. Return a `400 status code` if the validation fails.
 
-Update the destroy() route handler to call the delete() method of the service, and return a 204 status code upon successful restaurant deletion.
+Update the `destroy()` route handler to call the `delete()` method of the service, and return a 204 status code upon successful restaurant deletion.
